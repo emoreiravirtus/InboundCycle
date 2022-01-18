@@ -1,0 +1,83 @@
+.main-wrapper {
+    justify-content: center;
+    
+    &__titles {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        @media screen and (max-width: $grid__bp-md *1px) {
+            padding: 10px;
+        }
+
+        &-bigger-title {
+            color: $primary;
+            font-size: 35px;
+            margin-top: 60px;
+            opacity: 0;
+            animation: appear-from-left 2s 1s forwards;
+        }
+    
+        &-smaller-title {
+            color: $grey;
+            font-size: 22px;
+            max-width: 90%;
+            opacity: 0;
+            animation: appear-from-left 2s 2s forwards;
+        }
+    }
+
+    &__ebook-wrapper {
+        transition: 0.2s all;
+        z-index: 1;
+        &__ebook {
+            opacity: 0;
+            margin-top: -30px;
+            animation: appear-from-bottom 2s 2s forwards;
+        }
+
+        &:hover {
+            transform: skew(11deg) scale(1.4);
+        }
+    }
+
+    &__paragraph {
+        color: $dark-grey;
+        font-size: 16px;
+        line-height: 24px;
+        padding-right: 35px;
+        opacity: 0;
+        animation: appear-from-bottom 2s 4s forwards;
+        z-index: -1;
+
+        @media screen and (max-width: $grid__bp-md *1px) {
+            padding: 10px;
+        }
+
+        a {
+            color: $secondary;
+            text-decoration: none;
+            border-bottom: 1px solid $secondary;
+            padding-bottom: 1px;
+        }
+    }
+
+    &__emphasizes {
+        cursor: pointer;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 16px;
+        color: $secondary;
+        font-weight: 600;
+        opacity: 0;
+        animation: appear-from-bottom 2s 6s forwards;
+
+        @media screen and (max-width: $grid__bp-md *1px) {
+            padding: 10px;
+        }
+
+        &:hover {
+            transform: skew(12deg);
+        }
+    }
+}

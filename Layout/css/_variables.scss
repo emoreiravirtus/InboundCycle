@@ -1,0 +1,33 @@
+// Grid System.
+$num-columns : 12;
+$one-column : 100% / $num_columns;
+$half-row: 6;
+$full-row: 12;
+$grid__bp-md: 768;
+$grid__bp-lg: 992;
+$grid__cols: 12;
+$map-grid-props: ('-sm': 0, '-md': $grid__bp-md, '-lg': $grid__bp-lg);
+
+// Spacing (For margins and paddings).
+$spaceamounts: (5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 75, 100);
+$sides: (top, bottom, left, right);
+
+// Colors.
+$primary: #e96d28;
+$secondary: #ed5900;
+$white: #fafafa;
+$grey: #b1b1b1;
+$light-grey: #ececec;
+$dark-grey: #4F4F51;
+$font-link-color: $primary;
+
+// Fonts.
+@font-face {
+    font-family: 'fontAwesome';
+    src: url('../fonts/fontawesome-webfont.eot');
+    src: url('../fonts/fontawesome-webfont.svg#fontAwesome') format('embedded-opentype'),
+       url('../fonts/fontawesome-webfont.woff2') format('woff2'),
+       url('../fonts/fontawesome-webfont.woff') format('woff'),
+       url('../fonts/fontawesome-webfont.ttf')  format('truetype'),
+       url('../fonts/fontawesome-webfont.svg#svgFontName') format('svg');
+}

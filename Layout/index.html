@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>InboundCycle</title>
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="./js/open-popup.js"></script>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header row">
+    <!-- Logotype -->
+    <div class="header__logotype-wrapper center col-sm-3 col-md-6">
+      <img src="img/inboundcycle-logo.png" alt="InboundCycle">
+    </div>
+    <!-- Social Icons -->
+    <ul class="header__social-icons col-sm-3 col-md-5">
+      <li>
+        <a href="https://www.facebook.com/InboundCycle" target="_blank"
+          title="Visita nuestra cuenta de Facebook de InboundCycle">
+          <i class="fa fa-facebook-square"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://twitter.com/inboundcycle" target="_blank" title="Visitar el Twitter de InboundCycle">
+          <i class="fa fa-twitter-square"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/company/2387654" target="_blank" title="Visitar el LinkedIn de InboundCycle">
+          <i class="fa fa-linkedin-square"></i>
+        </a>
+      </li>
+    </ul>
+  </header>
+  <div class="container--fluid">
+    <!-- Separator Image -->
+  <div class="separator-image"></div>
+  <!-- Main -->
+  <main class="main-wrapper row">
+    <section class="col-md-6">
+      <div class="row">
+  
+        <div class="main-wrapper__titles col-md-7">
+          
+          <!-- Titles -->
+          <h1 class="main-wrapper__titles-bigger-title">Lorem ipsum dolor sit amet elit consectetur adipiscing eu ipsum porttitor ligula donec</h1>
+          <h2 class="main-wrapper__titles-smaller-title">Lorem ipsum dolor sit amet consectetur adipiscing elit eu porttitor ligula donec</h2>
+        
+        </div>
+
+        <!-- Ebook -->
+        <div class="main-wrapper__ebook-wrapper center">
+          <img src="img/ebook.png" class="main-wrapper__ebook-wrapper__ebook" alt="E-book genérico de InboundCycle">
+        </div>
+
+      </div>
+
+      <!-- Body text -->
+      <p class="main-wrapper__paragraph">Duis blandit tempor facilisis. Curabitur ipsum turpis, <a href="#" title="Enlace de prueba">venenatis</a> et
+        massa id, congue dignissim nibh. Praesent vitae justo vel metus faucibus vehicula. Donec vitae semper eros, et
+        viverra leo. Quisque maximus semper mi, sit amet vehicula quam ultricies eu. Nullam euismod orci sed erat
+        blandit vulputate nec vitae arcu. Integer nec imperdiet sem. Nullam a nibh rhoncus, tincidunt arcu eu, porta
+        erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae semper eros, et
+        viverra leo.</p>
+      <!-- Emphasizes -->
+      <div class="main-wrapper__emphasizes m-t-75 m-b-75">
+        Rellena el formulario para descargar la guía <i class="fa fa-long-arrow-right"></i>
+      </div>
+    </section>
+    <!-- Aside -->
+    <aside class="aside-wrapper col-md-3">
+      <!-- Download form -->
+      <form class="aside-wrapper__form p-30" onsubmit="openPopup(); return false;">
+        <h3 class="aside-wrapper__form__title">Descargar e-book gratis</h3>
+        <fieldset>
+          <input type="text" name="name" placeholder="Nombre">
+          <input type="text" name="surname" placeholder="Apellidos">
+          <input type="email" name="email" placeholder="Email">
+        </fieldset>
+        <fieldset class="row">
+          <label><input type="checkbox" name="legal"> Acepto la <a href="#"
+              title="Lea nuestra política de privacidad">política de privacidad</a>*</label>
+          <label><input type="checkbox" name="subscription"> Suscríbeme al blog</label>
+        </fieldset>
+        <button type="submit">Descargar</button>
+      </form>
+    </aside>
+  </main>
+  </div>
+  
+  <!-- Footer -->
+  <footer>
+    <div class="footer-frame row">
+      <!-- Logotype -->
+      <div class="center">
+        <img src="./img/inboundcycle-logo-small.png" class="logotype col-sm-3 col-md-6" alt="InboundCycle">
+      </div>
+      <!-- Legal menu -->
+      <nav class="col-sm-3 col-md-5">
+        <ul>
+          <li>InboundCycle © 2015</li>
+          <li><a href="#" title="Lea nuestra política de privacidad">Política de Privacidad</a></li>
+          <li><a href="#" title="Lea el aviso legal">Aviso Legal</a></li>
+        </ul>
+      </nav>
+      <!-- Copyright -->
+    </div>
+  </footer>
+  <!-- Pop-up -->
+  <div class="blur-panel">
+  </div>
+  <div class="popup">
+    <div class="caption">
+      <div class="row">
+        <div class="col-md-12 popup__close-button ">
+          <i class="fa fa-times" onclick="closePopup()"></i>
+        </div>
+      </div>
+      <p>¡Muchas gracias! 😊</p>
+      <img src="https://media.giphy.com/media/IU7YhPcG95BIw5EYlk/giphy.gif" alt="Gracias!!!">
+    </div>
+  </div>
+</body>

@@ -1,0 +1,30 @@
+.header {
+    border-top: 5px solid $secondary;
+    height: calc(39px * 3);
+    animation: header-border-animation 2s;
+
+    &__logotype-wrapper {
+        opacity: 0;
+        text-align: center;
+        animation: appear-from-left 2s 1s forwards;
+    }
+
+    &__social-icons {
+        text-align: center;
+        list-style: none;
+        
+        li {
+            display: inline;
+            padding: 3px;
+        }
+
+        a {
+            color: $secondary;
+            text-decoration: none;
+
+            &:hover {
+                color: $primary;
+            }
+        }
+    }
+}

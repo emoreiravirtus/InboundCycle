@@ -1,0 +1,30 @@
+@keyframes appear-from-left {
+    0% { 
+        transform: translateX(-20px);
+        opacity: 0;
+    };
+    100% { 
+        transform: translateX(0);
+        opacity: 1;
+    };
+}
+
+@keyframes appear-from-bottom {
+    0% { 
+        transform: translateY(20px);
+        opacity: 0;
+    };
+    100% { 
+        transform: translateX(0);
+        opacity: 1;
+    };
+}
+
+@keyframes header-border-animation {
+    0% { 
+        border-top: 2000px solid $secondary;
+    };
+    100% { 
+        border-top: 5px solid $secondary;
+    };
+}

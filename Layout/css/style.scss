@@ -1,0 +1,26 @@
+@import 'variables';
+@import 'mixins';
+@import 'animations';
+@import 'grid-system';
+@import 'spacing';
+@import './components/components';
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'fontAwesome', sans-serif;
+}
+
+body {
+    position: relative;
+}
+
+::-moz-selection {
+    color: $white;
+    background: $primary;
+  }
+  
+::selection {
+    color: $white;
+    background: $primary;
+}

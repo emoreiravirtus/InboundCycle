@@ -1,0 +1,82 @@
+.aside-wrapper {
+    opacity: 0;
+    margin-top: 60px;
+    animation: appear-from-bottom 2s 2s forwards;
+
+    @media screen and (max-width: $grid__bp-md *1px) {
+        margin-bottom: 30px;
+    }
+
+    &__form {
+        background-color: $light-grey;
+        height: 340px;
+        width: 260px;
+        display: flex;
+        flex-direction: column;
+
+        &__title {
+            color: $secondary;
+            margin-top: 0;
+            margin-bottom: 32px;
+            font-size: 16px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        fieldset {
+            padding: 0;
+            border: none;
+
+            input[type=text], input[type=email]{
+                padding: 15px;
+                margin-bottom: 15px;
+                width: calc(256px - 30px);
+                font-size: 16px;
+                border: 1px solid $grey;
+                border-radius: 4px;
+            }
+
+            input[type=checkbox] {
+                cursor: pointer;
+                border: 1px solid $grey;
+                border-radius: 4px;
+            }
+
+            label {
+                color: $dark-grey;
+                font-size: 14px;
+                margin-bottom: 11px;
+
+                a {
+                    text-decoration: none;
+                    color: $secondary;
+                }
+            }
+
+            & label:first-of-type{
+                margin-bottom: 11px;
+            }
+
+            & label:last-of-type{
+                margin-top: 0;
+                margin-bottom: 23px;
+            }
+        }
+
+        button {
+            cursor: pointer;
+            padding: 10px 0;
+            text-transform: uppercase;
+            color: $white;
+            background-color: $secondary;
+            border: 2px solid $primary;
+            border-radius: 4px;
+            transition: 0.2s all ease;
+
+            &:hover {
+                background-color: lighten($secondary, 10%);
+                transform: translateY(-5px);
+            }
+        }
+    }
+}

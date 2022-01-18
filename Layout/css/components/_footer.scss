@@ -1,0 +1,27 @@
+footer {
+    background-color: $dark-grey;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    ul {
+        list-style: none;
+        display: inline-flex;
+
+        & li:first-child, li:nth-child(2) {
+            border-right: 1px solid $grey;
+        }
+
+        li {
+            color: $white;
+            font-size: 13px;
+            padding: 0 6px;
+        }
+    }
+
+    a {
+        color: $white;
+        text-decoration: none;
+    }
+}
